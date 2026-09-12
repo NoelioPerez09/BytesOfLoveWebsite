@@ -1,6 +1,6 @@
 .download-page-container {
     position: relative;
-    background-color: rgba(252,236,168,255);
+    background-color: #FEF7D8;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -42,4 +42,25 @@
 }
 .os-type {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content-area {
+  flex: 1; 
+}
+@media (max-width: 768px) {
+    #downloadCol {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .column {
+        width: 100%;
+        max-width: 300px;
+    }
 }
