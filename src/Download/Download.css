@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .download-title {
@@ -63,12 +64,18 @@
 }
 @media (max-width: 768px) {
     #downloadCol {
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         gap: 2rem;
-    }
-    
-    .column {
         width: 100%;
-        max-width: 300px;
+    }
+
+    .column {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+        max-width: 300px !important;
     }
 }
