@@ -1,9 +1,10 @@
 .download-page-container {
     position: relative;
-    background-color: rgba(252,236,168,255);
+    background-color: #FEF7D8;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .download-title {
@@ -39,7 +40,42 @@
     justify-content: center; 
     align-items: center;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(209, 132, 215, 255);
 }
 .os-type {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content-area {
+  flex: 1; 
+}
+@media (max-width: 768px) {
+    #downloadCol {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .column {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100% !important;
+        max-width: 300px !important;
+    }
 }

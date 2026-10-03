@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Navbar from "../Navbar/Navbar" 
+import Footer from "../Footer/Footer";
 import "./Download.css";
 import "../Home/Home.css";
 
@@ -11,9 +12,9 @@ const Download = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     return (
-        <div className="download-page-container">
+        <div className="download-page-container page-wrapper">
             <Navbar />
-         <div id="download">
+         <main id="download" className="content-area">
                 <h2 id="aboutHeading" className="download-title">Download <span id="bytesName">Bytes of Love</span> Now!</h2>
                 <div id="downloadCol">
                     <div id="macDownload" class="column">
@@ -42,8 +43,10 @@ const Download = () => {
 
               
                 </div>
-            </div>
+            </main>
+            <Footer />
         </div>
+        
     )
 } 
 

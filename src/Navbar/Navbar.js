@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="logo-container flex flex-row items-center">
         <img
             src="https://docs.ufosc.org/img/logo.png"
-            class="logo"
+            className="logo"
             onClick={() => window.open("https://ufosc.org/", "_blank")}
             alt="UF OSC Logo"
         />
